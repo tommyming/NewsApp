@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		03B8EA052C27C9890075FC31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA042C27C9890075FC31 /* AppDelegate.swift */; };
 		03B8EA072C27C9890075FC31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA062C27C9890075FC31 /* SceneDelegate.swift */; };
-		03B8EA092C27C9890075FC31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA082C27C9890075FC31 /* ViewController.swift */; };
-		03B8EA0C2C27C9890075FC31 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 03B8EA0B2C27C9890075FC31 /* Base */; };
 		03B8EA0E2C27C98B0075FC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B8EA0D2C27C98B0075FC31 /* Assets.xcassets */; };
 		03B8EA112C27C98B0075FC31 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 03B8EA102C27C98B0075FC31 /* Base */; };
+		03B8EA1C2C27CC880075FC31 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA1B2C27CC880075FC31 /* Article.swift */; };
+		03B8EA1E2C27CD700075FC31 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA1D2C27CD700075FC31 /* NetworkManager.swift */; };
+		03B8EA212C27CD870075FC31 /* ArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA202C27CD870075FC31 /* ArticlesRequest.swift */; };
+		03B8EA242C27D0E70075FC31 /* NewsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA232C27D0E70075FC31 /* NewsPageViewController.swift */; };
+		03B8EA262C27D5EC0075FC31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B8EA252C27D5EC0075FC31 /* Main.storyboard */; };
+		03B8EA282C27D69E0075FC31 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA272C27D69E0075FC31 /* EmptyListView.swift */; };
+		03B8EA2A2C27D7DD0075FC31 /* NewsArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA292C27D7DD0075FC31 /* NewsArticleTableViewCell.swift */; };
+		03B8EA2D2C27D84E0075FC31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8EA2C2C27D84E0075FC31 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03B8EA012C27C9890075FC31 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B8EA042C27C9890075FC31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03B8EA062C27C9890075FC31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03B8EA082C27C9890075FC31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03B8EA0B2C27C9890075FC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03B8EA0D2C27C98B0075FC31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03B8EA102C27C98B0075FC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03B8EA122C27C98B0075FC31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B8EA1B2C27CC880075FC31 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		03B8EA1D2C27CD700075FC31 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		03B8EA202C27CD870075FC31 /* ArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRequest.swift; sourceTree = "<group>"; };
+		03B8EA232C27D0E70075FC31 /* NewsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageViewController.swift; sourceTree = "<group>"; };
+		03B8EA252C27D5EC0075FC31 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		03B8EA272C27D69E0075FC31 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		03B8EA292C27D7DD0075FC31 /* NewsArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleTableViewCell.swift; sourceTree = "<group>"; };
+		03B8EA2C2C27D84E0075FC31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		03B8EA032C27C9890075FC31 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				03B8EA2B2C27D8440075FC31 /* Utils */,
+				03B8EA222C27D0C10075FC31 /* Views */,
+				03B8EA1F2C27CD760075FC31 /* Network */,
+				03B8EA182C27C9EE0075FC31 /* Model */,
 				03B8EA042C27C9890075FC31 /* AppDelegate.swift */,
 				03B8EA062C27C9890075FC31 /* SceneDelegate.swift */,
-				03B8EA082C27C9890075FC31 /* ViewController.swift */,
-				03B8EA0A2C27C9890075FC31 /* Main.storyboard */,
+				03B8EA252C27D5EC0075FC31 /* Main.storyboard */,
 				03B8EA0D2C27C98B0075FC31 /* Assets.xcassets */,
 				03B8EA0F2C27C98B0075FC31 /* LaunchScreen.storyboard */,
 				03B8EA122C27C98B0075FC31 /* Info.plist */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		03B8EA182C27C9EE0075FC31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03B8EA1B2C27CC880075FC31 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03B8EA1F2C27CD760075FC31 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				03B8EA1D2C27CD700075FC31 /* NetworkManager.swift */,
+				03B8EA202C27CD870075FC31 /* ArticlesRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		03B8EA222C27D0C10075FC31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03B8EA232C27D0E70075FC31 /* NewsPageViewController.swift */,
+				03B8EA292C27D7DD0075FC31 /* NewsArticleTableViewCell.swift */,
+				03B8EA272C27D69E0075FC31 /* EmptyListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03B8EA2B2C27D8440075FC31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				03B8EA2C2C27D84E0075FC31 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +175,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B8EA262C27D5EC0075FC31 /* Main.storyboard in Resources */,
 				03B8EA0E2C27C98B0075FC31 /* Assets.xcassets in Resources */,
 				03B8EA112C27C98B0075FC31 /* Base in Resources */,
-				03B8EA0C2C27C9890075FC31 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +188,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B8EA092C27C9890075FC31 /* ViewController.swift in Sources */,
+				03B8EA1C2C27CC880075FC31 /* Article.swift in Sources */,
+				03B8EA242C27D0E70075FC31 /* NewsPageViewController.swift in Sources */,
+				03B8EA282C27D69E0075FC31 /* EmptyListView.swift in Sources */,
+				03B8EA212C27CD870075FC31 /* ArticlesRequest.swift in Sources */,
+				03B8EA1E2C27CD700075FC31 /* NetworkManager.swift in Sources */,
+				03B8EA2A2C27D7DD0075FC31 /* NewsArticleTableViewCell.swift in Sources */,
 				03B8EA052C27C9890075FC31 /* AppDelegate.swift in Sources */,
 				03B8EA072C27C9890075FC31 /* SceneDelegate.swift in Sources */,
+				03B8EA2D2C27D84E0075FC31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03B8EA0A2C27C9890075FC31 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03B8EA0B2C27C9890075FC31 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03B8EA0F2C27C98B0075FC31 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
