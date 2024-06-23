@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class NewsPageViewController: UIViewController {
     private lazy var searchBar: UISearchBar = {
@@ -45,12 +46,26 @@ class NewsPageViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // TODO: API calls
+        
+        AF.request("https://newsapi.org/v2/top-headlines?country=us&apiKey=183daca270264bad86fc5b72972fb82a", method: .get)
+            .responseDecodable(of: ArticlesRequest.self) { [weak self] response in
+                guard let self else { return }
+                
+                switch response.result {
+                case let .success(articlesResponse):
+                    dataSource = articlesResponse.articles
+                case let .failure(error):
+                    // TODO: Handle more elegantly using Alerts.
+                    print(error.localizedDescription)
+                }
+            }
     }
     
     override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
         
         tableView.backgroundView = dataSource.isEmpty ? emptyView : nil
+        tableView.register(NewsArticleTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     private func setupConstraints() {
@@ -70,7 +85,7 @@ class NewsPageViewController: UIViewController {
 
 extension NewsPageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let articleLink = dataSource[indexPath.row].url
+        guard let articleLink = dataSource[indexPath.row].url else { return }
         
         guard let url = URL(string: articleLink) else { return }
         
@@ -85,7 +100,11 @@ extension NewsPageViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewsArticleTableViewCell
+        
+        cell.setupView(article: dataSource[indexPath.row])
+        
+        return cell
     }
 }
 
